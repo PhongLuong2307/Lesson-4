@@ -58,7 +58,7 @@ function StateTutorial() {
                 flexDirection: "column",
                 justifyContent: "center"
             }}>
-                <h1>This is {currentNumber % 2 === true ? "even number" : "odd number"}</h1>
+                <h1>This is {checkEven(currentNumber) === true ? "even number" : "odd number"}</h1>
                 <h1>{currentNumber}</h1>
                 <div className="button">
                     <button onClick={addOne}>+</button>
